@@ -1,0 +1,17 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		// входно данно от конзолата
+		double usd = double.Parse(Console.ReadLine());
+		
+		//формула за изчисляване на валута
+		double bgn = usd * 1.79549; //приерна стойност за валутата
+		
+		//изходни данни
+		Console.WriteLine(bgn);
+		
+	}
+}
