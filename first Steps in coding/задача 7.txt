@@ -1,0 +1,36 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//цените на различните менюта
+		double ChickenMenu = 10.35;
+		double FishMenu = 12.40;
+		double VeggieMenu = 8.15;
+		
+		// входни количества храна
+		int NumbChickenMenu = int.Parse(Console.ReadLine());
+		int NumbFishMenu = int.Parse(Console.ReadLine());
+		int NumbVeggieMenu = int.Parse(Console.ReadLine());
+		
+		// цени на менютата според количествата
+		double PriceChickenMenu = NumbChickenMenu * ChickenMenu;
+		double PriceFishMenu = NumbFishMenu * FishMenu;
+		double PriceVeggieMenu = NumbVeggieMenu * VeggieMenu;
+		double PriceForDelivery  = 2.50;
+		
+		// Обща цена за менютата
+		double AllMenusPrice = PriceChickenMenu + PriceFishMenu + PriceVeggieMenu;
+		
+		// цена за десерт
+		double DessertPrice = AllMenusPrice * 0.20;
+		
+		// тотална цена + доставка
+		double TotalPrice = AllMenusPrice + DessertPrice + PriceForDelivery;
+		
+		float TotalMoneySpent = (float)TotalPrice;
+		Console.WriteLine(TotalMoneySpent);
+		
+	}
+}

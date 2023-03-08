@@ -1,0 +1,16 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.Write("Enter First name: ");
+		string firstName = Console.ReadLine();
+		Console.Write("Enter last name: ");
+		string lastName = Console.ReadLine();
+		
+		string fullName = string.Concat(firstName, " " ,lastName);
+		Console.WriteLine("Your full name is {0}", fullName);
+		
+	}
+}

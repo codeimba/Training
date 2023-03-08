@@ -1,0 +1,44 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{	
+		//цените на продуктите за еденична бройка
+		double NylonPrice = 1.50f;
+		double PaintPrice = 14.50f;
+		double PaitThinnerPrice = 5.00f;
+		double BagsPrice = 0.40f;
+		
+		//количеството на продуктите и работните часове като входни данни
+		int NylonNumb = int.Parse(Console.ReadLine());
+		int PaintNumb = int.Parse(Console.ReadLine());
+		int PaintThinnerNumb = int.Parse(Console.ReadLine());
+		int HoursWorked = int.Parse(Console.ReadLine());
+		
+		//допълнителни продукти според клиента (+10% боя и + 2кв.м. найлон)
+		
+		double TotalNylonNumb = NylonNumb + 2;
+		double TotalPaintNumb = PaintNumb + (PaintNumb * 0.10);
+		
+		//сумите за материали (цената * бройката)
+		double TotalNylonPrice = TotalNylonNumb * NylonPrice;
+		double TotalPaintPrice = TotalPaintNumb * PaintPrice;
+		double TotalPaintThinnerPrice = PaintThinnerNumb * PaitThinnerPrice;
+		
+		// обща сума за материали
+		double TotalMaterialsPrice = TotalNylonPrice + TotalPaintPrice + TotalPaintThinnerPrice + BagsPrice;
+		
+		// Цената за работните часове на работници
+		double TotalWorkHoursPrice = (TotalMaterialsPrice * 0.30) * HoursWorked;
+		
+		// Крайна цена (материали и работна ръка)
+		double WholePrice = TotalWorkHoursPrice + TotalMaterialsPrice;
+		
+		float TotalPrice = (float)WholePrice;
+		
+		Console.WriteLine(TotalPrice);
+		
+		
+	}
+}

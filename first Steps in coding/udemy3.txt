@@ -1,0 +1,32 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		byte myByte = 1;
+		short myShort = 223;
+		int myInt = 33311;
+		long myLong = 4139310310;
+		float myFloat = 13.4F;
+		double myDouble = 145.112;
+		char myChar = 'M';
+		bool myBool = true;
+		
+		string myFirststring = "I control text";
+		string mySecondstring = "66";
+		int myNewint = int.Parse(mySecondstring);
+		
+		Console.WriteLine(myByte);
+		Console.WriteLine(myShort);
+		Console.WriteLine(myInt);
+		Console.WriteLine(myLong);
+		Console.WriteLine(myFloat);
+		Console.WriteLine(myDouble);
+		Console.WriteLine(myChar);
+		Console.WriteLine(myBool);
+		Console.WriteLine(myFirststring);
+		Console.WriteLine(myNewint);
+		
+	}
+}

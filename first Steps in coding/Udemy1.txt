@@ -1,0 +1,15 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.Write("Enter the string here: ");
+		string input = Console.ReadLine();
+		
+		Console.Write("Enter a Charecter to search: ");
+		char searchInput = Console.ReadLine()[0];
+		int searchIndex = input.IndexOf(searchInput);
+		Console.WriteLine("Index of character {0} in string is {1}", searchInput, searchIndex);
+	}
+}
