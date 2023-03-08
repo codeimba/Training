@@ -39,7 +39,7 @@ public class Program
                 {
                     studentTicketSold++;
                 }
-                else if (ticketType == "standart")
+                else if (ticketType == "standard")
                 {
                     standartTicketSold++;
                 }
@@ -56,8 +56,9 @@ public class Program
         double percsStudentTickets = studentTicketSold / (totalTicketsSold * 1.00) * 100;
         System.Console.WriteLine($"{percsStudentTickets:f2}% student tickets.");
         double percStandartTickets = standartTicketSold / (totalTicketsSold * 1.00) * 100;
-        System.Console.WriteLine($"{percStandartTickets:f2}% standart tickets.");
+        System.Console.WriteLine($"{percStandartTickets:f2}% standard tickets.");
         double percKidsTickets = kidsTicketSold / (totalTicketsSold * 1.00) * 100;
         System.Console.WriteLine($"{percKidsTickets:f2}% kids tickets.");
+
     }
 }
